@@ -1,0 +1,7 @@
+age = input("digite sua idade")
+
+
+if age >= '18':
+    print("Individuo possui idade minima para dirigir")
+elif age <= "17":
+    print("Indivíduo não possui idade mínima para dirigir")

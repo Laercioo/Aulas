@@ -1,0 +1,23 @@
+frequencia = int(input("Frequencia do aluno: "))
+
+def main():
+    frequencia_do_aluno = input("Frequencia do aluno: ")
+
+    while not frequencia_do_aluno.isdigit():
+        frequencia_do_aluno = input("Valor inválido. Digite a frequencia do aluno: ")
+
+    frequencia_do_aluno = int(frequencia_do_aluno)
+
+    if 0 <= frequencia_do_aluno <= 100:
+        if frequencia_do_aluno == 21:
+            mensagem_de_parabenizacao = "UHUU. AGORA VOCÊ PODE PRESENTEAR UM AMIGO OU AMIGA PAR PRINCE VOCE ESTÁ PARTICIPANDO DA NOSSA PROMO TREINA JUNTO"
+        elif frequencia_do_aluno != 1:
+            mensagem_de_boas_vindas = "QUE BOM VER VOCÊ DE VOLTA. A PARTIR DE AGORA INICIAMOS SUA JORNADA DE APRENDIZAGEM"
+
+        if mensagem_de_parabenizacao or mensagem_de_boas_vindas:
+            print(mensagem_de_parabenizacao or mensagem_de_boas_vindas)
+    else:
+        print("Frequencia inválida. Digite um valor entre 0 e 100.")
+
+if '_name_' == "_main_":
+    main()
