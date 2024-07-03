@@ -10,7 +10,7 @@ faker = Faker('pt_BR')
 
 persona = {
     "nome": faker.name(),
-    "cidade": faker.postcode(),
+    "cidade": faker.city(),
     "idade": faker.random_int(18,68)
     
 }
