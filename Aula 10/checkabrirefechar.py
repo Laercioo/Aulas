@@ -1,7 +1,7 @@
-from selenium.webdriver import firefox
+from selenium.webdriver import Firefox
 from selenium.webdriver.common.by import By
 
-browser = firefox()
+browser = Firefox()
 
 link = "https://page-test-selenium.s3.sa-east-1.amazonaws.com/index.html"
 
