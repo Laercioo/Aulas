@@ -1,6 +1,6 @@
 from behave import given, when, then
-from selenium.webdriver import Firefox()
-from selenium.webdriver,common.by import By 
+from selenium.webdriver import Firefox
+from selenium.webdriver.common.by import By 
 from selenium.webdriver.support.ui import Select
 
 
