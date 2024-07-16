@@ -24,8 +24,15 @@ def step_impl(context):
 
 @when(u'aperto o botão de enviar')
 def step_impl(context):
-    pass
+    button_submit = context.browser.find_element(By.XPATH, "/html/body/div[1]/div[2]/section[8]/div[1]/form/button").submit()
 
 @then(u'os dados são recebidos com sucesso')
 def step_impl(context):
-    pass
+    #import ipdb;ipdb.set_trace()
+    wait = WebdriverWait(context.browser, 10)
+    
+    alert = wait.until(EC.alert_is_present())
+    
+    assert 'Dados recebidos' in alert.text, "Dados não foram recebidos"
+    
+    
